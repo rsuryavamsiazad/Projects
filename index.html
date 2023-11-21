@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./game-console.png" type="image/x-icon">
+    <title>Game?</title>
+</head>
+
+<body>
+    <div class="holder">
+        <div class="image"><img src="./rock-paper-scissors-game-rules.png" alt="rules pic" class="rulesimg"></div>
+        <div>
+            <div class="gameHolder">
+                <div class="title">ROCK PAPER SCISSORS</div>
+                <div class="container">
+                    <div class="one">
+                        <div class="userTxt">User Choice</div>
+                        <div class="computerTxt"> Computer Choice</div>
+                    </div>
+
+                    <div class="two">
+                        <button class="rock" onclick="
+                        let choice = computerChoice();
+                        let res= resultMsg('Rock',choice);
+                        result(res)" ;>Rock</button>
+                        <button class="paper" onclick="
+                         choice = computerChoice();
+                          res= resultMsg('Paper',choice);
+                        result(res)" ;>Paper</button>
+                        <button class="scissors" onclick="
+                         choice = computerChoice();
+                          res=resultMsg('Scissors',choice);
+                        result(res)" ;>Scissors</button>
+                    </div>
+                    <div class="result">
+                        Result
+                    </div>
+                    <div class="three">
+                        <p class="win"></p>
+                        <p class="loss"></p>
+                        <p class="tie"></p>
+                        <button class="reset" onclick="reset()">Reset Score</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clock"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
