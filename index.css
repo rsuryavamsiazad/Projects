@@ -9,7 +9,7 @@
 
 body {
     background-image: linear-gradient(to right, #ced9eb, #e4dced, #f6e0e9, #fee7e5, #fff1e5);
-        /* background-image: linear-gradient(to right, #f2e1f4, #e5d4f0, #d6c8ee, #c3beec, #acb4ea, #a5afed, #9da9f1, #95a4f4, #a6a0fb, #bc99ff, #d391fe, #ec87fa); */
+    /* background-image: linear-gradient(to right, #f2e1f4, #e5d4f0, #d6c8ee, #c3beec, #acb4ea, #a5afed, #9da9f1, #95a4f4, #a6a0fb, #bc99ff, #d391fe, #ec87fa); */
 }
 
 .holder {
@@ -233,5 +233,34 @@ body {
     .clock {
         font-size: 10px;
     }
-    
+
+    .hoverTxt {
+        display: none;
+
+    }
+
+}
+
+.hoverTxt {
+    position: absolute;
+    color: black;
+    height: 10px;
+    top: 52%;
+    left: 41%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    animation: blink 3s ease-in-out infinite;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    0% {
+        opacity: 0.1;
+    }
 }
